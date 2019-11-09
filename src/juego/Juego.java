@@ -1,4 +1,4 @@
-package Juego;
+package juego;
 
 import java.awt.BorderLayout;
 import java.awt.Canvas;
@@ -11,8 +11,8 @@ import java.awt.image.DataBufferInt;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-import Control.Teclado;
-import Graficos.Pantalla;
+import control.Teclado;
+import graficos.Pantalla;
 
 public class Juego extends Canvas implements Runnable {
 
@@ -29,7 +29,7 @@ public class Juego extends Canvas implements Runnable {
 
 	// Icono
 	private static final ImageIcon icono = new ImageIcon(
-			Juego.class.getResource("/Icono/icono.png"));
+			Juego.class.getResource("/iconos/icono.png"));
 
 	// Declaro el teclado
 	private static Teclado teclado;

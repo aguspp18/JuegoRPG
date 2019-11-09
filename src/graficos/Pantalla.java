@@ -1,4 +1,4 @@
-package Graficos;
+package graficos;
 
 public final class Pantalla {
 	private final int ancho;

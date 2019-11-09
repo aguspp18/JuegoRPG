@@ -1,4 +1,4 @@
-package Graficos;
+package graficos;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -12,8 +12,8 @@ public class HojaSprites {
 	public final int[] pixeles;
 
 	// Coleccion de las hojas de sprites
-	public static HojaSprites desierto = new HojaSprites("/Texturas/Desierto.png", 320, 320);
-	public static HojaSprites mapeadoUno = new HojaSprites("/Texturas/Mapsv1.png", 736, 448);
+	public static HojaSprites desierto = new HojaSprites("/texturas/Desierto.png", 320, 320);
+	public static HojaSprites mapeadoUno = new HojaSprites("/texturas/Mapsv1.png", 736, 448);
 	// fin de coleccion
 
 	// Constructor

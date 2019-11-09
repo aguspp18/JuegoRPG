@@ -1,4 +1,4 @@
-package Graficos;
+package graficos;
 
 public final class Sprite {
 	// Declaro las variables.
