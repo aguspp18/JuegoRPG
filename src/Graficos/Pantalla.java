@@ -39,7 +39,7 @@ public final class Pantalla {
 				// codigo para redibujar.
 				// temporal
 				this.pixeles[posicionX
-						+ posicionY * ancho] = Sprite.asfalto.pixeles[(x & MASCARA_SPRITE)
+						+ posicionY * ancho] = Sprite.pastoUno.pixeles[(x & MASCARA_SPRITE)
 								+ (y & MASCARA_SPRITE) * LADO_SPRITE];
 			}
 		}

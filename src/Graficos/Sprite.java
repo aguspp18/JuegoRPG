@@ -10,6 +10,7 @@ public final class Sprite {
 
 	// Coleccion de sprites
 	public static Sprite asfalto = new Sprite(32, 0, 0, HojaSprites.desierto);
+	public static Sprite pastoUno = new Sprite(32, 0, 0, HojaSprites.mapeadoUno);
 	// Fin de la coleccion
 
 	// Constructor.
@@ -26,7 +27,8 @@ public final class Sprite {
 		// Esto es para tomar un Sprite especifico de una hoja de Sprites.
 		for (int y = 0; y < lado; y++) {
 			for (int x = 0; x < lado; x++) {
-				pixeles[(x + y) * lado] = hoja.pixeles[(x + this.x) + (y + this.y) * hoja.obtenAncho()];
+				pixeles[x + y * lado] = hoja.pixeles[(x + this.x)
+						+ (y + this.y) * hoja.obtenAncho()];
 			}
 		}
 	}

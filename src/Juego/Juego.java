@@ -8,6 +8,7 @@ import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 import Control.Teclado;
@@ -25,6 +26,10 @@ public class Juego extends Canvas implements Runnable {
 
 	// Crear un Thread - Hilo
 	private static Thread thread;
+
+	// Icono
+	private static final ImageIcon icono = new ImageIcon(
+			Juego.class.getResource("/Icono/icono.png"));
 
 	// Declaro el teclado
 	private static Teclado teclado;
@@ -64,6 +69,7 @@ public class Juego extends Canvas implements Runnable {
 		ventana.add(this, BorderLayout.CENTER);
 		ventana.pack();
 		ventana.setVisible(true);
+		ventana.setIconImage(icono.getImage());
 	}
 
 	// metodo main.
@@ -100,16 +106,16 @@ public class Juego extends Canvas implements Runnable {
 		teclado.actualizar();
 
 		if (teclado.arriba) {
-			System.out.println("Arriba");
+			y += 2;
 		}
 		if (teclado.abajo) {
-			System.out.println("Abajo");
+			y -= 2;
 		}
 		if (teclado.izquierda) {
-			System.out.println("Izquierda");
+			x += 2;
 		}
 		if (teclado.derecha) {
-			System.out.println("Derecha");
+			x -= 2;
 		}
 		aps++;
 	}

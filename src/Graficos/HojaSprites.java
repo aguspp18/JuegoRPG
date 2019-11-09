@@ -13,6 +13,7 @@ public class HojaSprites {
 
 	// Coleccion de las hojas de sprites
 	public static HojaSprites desierto = new HojaSprites("/Texturas/Desierto.png", 320, 320);
+	public static HojaSprites mapeadoUno = new HojaSprites("/Texturas/Mapsv1.png", 736, 448);
 	// fin de coleccion
 
 	// Constructor
