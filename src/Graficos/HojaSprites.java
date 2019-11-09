@@ -11,12 +11,17 @@ public class HojaSprites {
 	private final int alto;
 	public final int[] pixeles;
 
+	// Coleccion de las hojas de sprites
+	public static HojaSprites desierto = new HojaSprites("/Texturas/Desierto.png", 320, 320);
+	// fin de coleccion
+
 	// Constructor
 	public HojaSprites(final String ruta, final int ancho, final int alto) {
 
 		// Inicializo las variables con el constructor
 		this.alto = alto;
 		this.ancho = ancho;
+
 		this.pixeles = new int[ancho * alto];
 
 		/*
