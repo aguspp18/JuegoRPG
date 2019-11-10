@@ -6,11 +6,13 @@ public final class Sprite {
 	private int x;
 	private int y;
 	public int[] pixeles;
-	private final HojaSprites hoja;
+	private HojaSprites hoja;
 
 	// Coleccion de sprites
-	public static Sprite asfalto = new Sprite(32, 0, 0, HojaSprites.desierto);
-	public static Sprite pastoUno = new Sprite(32, 0, 0, HojaSprites.mapeadoUno);
+	public static Sprite VACIO = new Sprite(32, 0);
+	public static Sprite ASFALTO = new Sprite(32, 0, 0, HojaSprites.DESIERTO);
+	public static Sprite PASTOUNO = new Sprite(32, 0, 0, HojaSprites.MAPEADO1);
+	public static Sprite PISODUNGEON1 = new Sprite(32, 8, 4, HojaSprites.DUNGEON);
 	// Fin de la coleccion
 
 	// Constructor.
@@ -32,4 +34,18 @@ public final class Sprite {
 			}
 		}
 	}
+
+	public Sprite(final int lado, final int color) {
+		this.lado = lado;
+		pixeles = new int[lado * lado];
+
+		for (int i = 0; i < pixeles.length; i++) {
+			pixeles[i] = color;
+		}
+	}
+
+	public int obtenLado() {
+		return this.lado;
+	}
+
 }

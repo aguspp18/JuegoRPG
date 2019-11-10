@@ -12,8 +12,9 @@ public class HojaSprites {
 	public final int[] pixeles;
 
 	// Coleccion de las hojas de sprites
-	public static HojaSprites desierto = new HojaSprites("/texturas/Desierto.png", 320, 320);
-	public static HojaSprites mapeadoUno = new HojaSprites("/texturas/Mapsv1.png", 736, 448);
+	public static HojaSprites DESIERTO = new HojaSprites("/texturas/Desierto.png", 320, 320);
+	public static HojaSprites MAPEADO1 = new HojaSprites("/texturas/Mapsv1.png", 736, 448);
+	public static HojaSprites DUNGEON = new HojaSprites("/texturas/_dungeon.png", 256, 256);
 	// fin de coleccion
 
 	// Constructor
